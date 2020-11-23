@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/back1"
+    >
+
+    <Button
+        android:id="@+id/create"
+        android:layout_width="166dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="136dp"
+        android:background="@mipmap/paper"
+        android:text="发布\n任务"
+        android:textSize="30dp"
+        android:textColor="#757070"
+        android:typeface="sans"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></Button>
+
+    <Button
+        android:id="@+id/receive"
+        android:layout_width="166dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="88dp"
+        android:background="@mipmap/paper1"
+        android:textColor="#35177C"
+        android:text="承接\n任务"
+        android:textSize="30dp"
+        app:layout_constraintStart_toEndOf="@+id/create"
+        app:layout_constraintTop_toTopOf="parent"></Button>
+
+    <Button
+        android:id="@+id/created"
+        android:layout_width="166dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="4dp"
+        android:textColor="#19614A"
+        android:background="@mipmap/paper2"
+        android:text="发布\n记录"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create"></Button>
+
+    <Button
+        android:id="@+id/received"
+        android:layout_width="166dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="4dp"
+        android:background="@mipmap/paper3"
+        android:text="已完成\n的任务"
+        android:textColor="#4DBE52"
+        android:textSize="30dp"
+        app:layout_constraintStart_toEndOf="@+id/created"
+        app:layout_constraintTop_toBottomOf="@+id/receive"></Button>
+
+    <Button
+        android:id="@+id/creating"
+        android:layout_width="166dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:background="@mipmap/paper4"
+        android:text="发布中\n的任务"
+        android:textColor="#315DAA"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/created"></Button>
+
+    <Button
+        android:id="@+id/receiving"
+        android:layout_width="166dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="4dp"
+        android:background="@mipmap/paper5"
+        android:textColor="#C41818"
+        android:text="承接中\n的任务"
+        android:textSize="30dp"
+        app:layout_constraintStart_toEndOf="@+id/creating"
+        app:layout_constraintTop_toBottomOf="@+id/received"></Button>
+
+    <Button
+        android:id="@+id/indentity"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/grade"></Button>
+
+    <Button
+        android:id="@+id/grade"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"></Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
