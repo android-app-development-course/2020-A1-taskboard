@@ -1,8 +1,8 @@
 package com.example.taskboard
 
 import android.app.Activity
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.KeyEvent
 import kotlinx.android.synthetic.main.activity_medal.*
 
 class MedalActivity : Activity() {
@@ -14,5 +14,11 @@ class MedalActivity : Activity() {
             finish()
             overridePendingTransition(R.anim.right_tran_in,R.anim.right_tran_out)
         }
+    }
+
+    override fun onKeyDown(keyCode: Int, event: KeyEvent?): Boolean {
+        finish()
+        overridePendingTransition(R.anim.right_tran_in,R.anim.right_tran_out)
+        return super.onKeyDown(keyCode, event)
     }
 }

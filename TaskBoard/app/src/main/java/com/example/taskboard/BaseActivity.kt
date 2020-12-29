@@ -7,7 +7,6 @@ import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 
 open class BaseActivity : Activity() {
 
@@ -44,9 +43,9 @@ open class BaseActivity : Activity() {
                 setMessage("You are forced to be offline. Please try to login again.")
                 setCancelable(false)
                 setPositiveButton("OK") { _, _ ->
-                    ActivityCollector.finishAll() // 閿€姣佹墍鏈堿ctivity
+                    ActivityCollector.finishAll()
                     val i = Intent(context, LoginActivity::class.java)
-                    context.startActivity(i) // 閲嶆柊鍚姩LoginActivity
+                    context.startActivity(i)
                 }
                 show()
             }

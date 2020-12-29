@@ -56,13 +56,6 @@
                 android:text="1294184934@qq.com"
                 android:textColor="#808080"
                 android:textSize="15dp" />
-            <TextView
-                android:id="@+id/sex"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="性别：男"
-                android:textColor="#808080"
-                android:textSize="15dp" />
 
         </LinearLayout>
     </LinearLayout>
