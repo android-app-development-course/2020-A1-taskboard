@@ -88,8 +88,8 @@ class CreatingActivity : Activity() {
                 }
             })
             val intent = Intent(this, CreatingListActivity::class.java)
-            startActivity(intent)
             intent.putExtra("user_id",userId)
+            startActivity(intent)
             overridePendingTransition(R.anim.overturn_in,R.anim.overturn_out)
             finish()
         }
